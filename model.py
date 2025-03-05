@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("/Users/jomaricelis/code/machine learning/runs/classify/train11/weights/best.pt")  # Load your trained model
+model = YOLO("/Users/jomaricelis/code/machine learning/runs/classify/train12/weights/best.pt")  # Load your trained model
 
 
 import streamlit as st
