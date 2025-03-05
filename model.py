@@ -54,7 +54,7 @@ if uploaded_file is not None:
         height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
         out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
 
-        with mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=4, min_detection_confidence=0.5, min_tracking_confidence=0.5) as face_mesh:
+        with mp_face_mesh.FaceMesh(static_image_mode=False, max_num_faces=4, min_detection_confidence=0.2, min_tracking_confidence=0.5) as face_mesh:
             while cap.isOpened():
                 ret, frame = cap.read()
                 if not ret:
