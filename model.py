@@ -1,5 +1,6 @@
 from ultralytics import YOLO
 
+
 model = YOLO("best.pt")  # Load your trained model
 
 
