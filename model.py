@@ -34,7 +34,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 
 # Load YOLOv11 Model
-model = YOLO("best.pt")  # Update path
+model = YOLO("weights/best.pt")  # Update path
 
 st.title("Attentiveness Detector")
 
