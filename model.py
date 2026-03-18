@@ -1,7 +1,14 @@
+import torch
+from ultralytics.nn.tasks import ClassificationModel, DetectionModel, SegmentationModel, PoseModel
+
+torch.serialization.add_safe_globals([ClassificationModel, DetectionModel, SegmentationModel, PoseModel])
+
 from ultralytics import YOLO
 
 
 model = YOLO("weights/best.pt")  # Load your trained model
+
+
 
 
 import streamlit as st
