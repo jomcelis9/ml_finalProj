@@ -1,25 +1,18 @@
 import torch
 from ultralytics.nn.tasks import ClassificationModel, DetectionModel, SegmentationModel, PoseModel
 
+# 1. Register the globals FIRST
 torch.serialization.add_safe_globals([ClassificationModel, DetectionModel, SegmentationModel, PoseModel])
 
-from ultralytics import YOLO
-
-
-model = YOLO("weights/best.pt")  # Load your trained model
-
-
-
-
+# 2. Import YOLO and other libraries AFTER
 import streamlit as st
 import cv2
 import tempfile
 import os
 import numpy as np
-from ultralytics import YOLO
 import mediapipe as mp
 from moviepy import *
-
+from ultralytics import YOLO
 import asyncio
 
 try:
