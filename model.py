@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("/Users/jomaricelis/code/machine learning/runs/classify/train12/weights/best.pt")  # Load your trained model
+model = YOLO("/Users/jomaricelis/code/machine learning/runs/classify/train11/weights/best.pt")  # Load your trained model
 
 
 import streamlit as st
@@ -26,7 +26,7 @@ mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 
 # Load YOLOv11 Model
-model = YOLO("/Users/jomaricelis/code/machine learning/runs/classify/train11/weights/best.pt")  # Update path
+model = YOLO("best.pt")  # Update path
 
 st.title("Attentiveness Detector")
 
