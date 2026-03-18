@@ -4,4 +4,4 @@ numpy
 ultralytics
 mediapipe
 moviepy
-opencv-python-headless
+opencv-python
