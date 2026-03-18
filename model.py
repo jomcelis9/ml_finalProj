@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 
 
-model = YOLO("best.pt")  # Load your trained model
+model = YOLO("weights/best.pt")  # Load your trained model
 
 
 import streamlit as st
